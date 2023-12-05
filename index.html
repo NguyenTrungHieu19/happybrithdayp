@@ -1,0 +1,80 @@
+<html __fvdsurfcanyoninserted="1" class="
+        clickberry-extension
+        clickberry-extension-standalone
+        clickberry-extension
+        clickberry-extension-standalone
+        clickberry-extension
+        clickberry-extension-standalone
+    ">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="image/png" href="./birthdayCake.png" />
+    <title>Happy Birthday Thu Phương</title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        window.open = function () { };
+        window.print = function () { };
+        if (false) {
+            window.ontouchstart = function () { };
+        }
+    </script>
+    <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
+    <meta content="clickberry-extension-here" />
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css" />
+    <div class="container">
+        <div class="balloon">
+            <div><span>H</span></div>
+            <div><span>A</span></div>
+            <div><span>P</span></div>
+            <div><span>P</span></div>
+            <div><span>Y</span></div>
+            <div><span>B</span></div>
+            <div><span>I</span></div>
+            <div><span>R</span></div>
+            <div><span>T</span></div>
+            <div><span>H</span></div>
+            <div><span>D</span></div>
+            <div><span>A</span></div>
+            <div><span>Y</span></div>
+        </div>
+        <div class="avatar">
+            <img src="./MyAvatar.jpg" alt="" class="avatar__img" onclick="showMessage()" />
+            <h1 onclick="showMessage()" class="avatar__title">Thu Phương</h1>
+        </div>
+        <audio id="player"autoplay>
+            <source src="./HappyBirthdayToYou.mp3" type="audio/mp3">
+        </audio>
+        <a href=""></a>
+    </div>
+    <script>
+
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+        function showMessage() {
+
+            swal({
+                title: "Chúc mừng sinh nhật Phương",
+                text: "HappyBrithday 🎂🎂🎂, chúc you tuổi mới luôn xinh đẹp có thật nhiều sức khỏe trong cuộc sống và đạt được nhưng gì mà mình mong muốn nha. Tuổi mới, vui vẻ này luôn luôn yêu đời có nhiều niềm vui nha và đặc biệt là.....831❤️",
+                button: {
+                    text: "❤️️",
+                },
+            });
+            const audio = document.getElementById('player');
+            audio.addEventListener('ended', function () {            
+                audio.play();
+            });         
+            window.onload = function () {
+                audio.play();
+            };
+        }
+        const handleNotification = setTimeout(showMessage, "2000")
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>
